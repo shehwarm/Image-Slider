@@ -11,4 +11,27 @@
 }
 img.displaySlide{
     display : block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding : 10px 15px;
+}
+.previous{
+    left:0;
+}
+.next{
+    right:0;
+}
+@keyframes fade{
+    from{opacit : .5};
+    to{opacity : 1};
 }
